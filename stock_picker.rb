@@ -1,9 +1,8 @@
 def stock_picker(array)
 	max_profit = 0
 	buy_day = 0
-	#can only sell after you buy
-
 	while buy_day <= array.length-2
+		#can only sell after you buy
 		sell_day = buy_day + 1
 		while sell_day <= array.length-1
 			profit = array[sell_day] - array[buy_day]
